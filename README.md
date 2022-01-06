@@ -3,7 +3,8 @@
 API made for the histology metadata project
 
 ## How to run
-Install all the node dependencies and run `npm start` on your terminal and you're good to go, the web-app should be running at `localhost:7000`
+ - Install all the node dependencies and run `npm start` on your terminal and you're good to go, the web-app should be running at `localhost:7000`
+ - To connect to your DB, replace the `mongoURL` in *index.js* with your mongo database URL.
 
 ## Routes
 
