@@ -1,16 +1,18 @@
 const mongoose = require('mongoose');
 
-const zillesHumanSchema = mongoose.Schema({
+const zillesAnimalSchema = mongoose.Schema({
     code:String,
+    species:String,
     sex:String,
-    age:String,
+    number:String,
     bodyWeight:String,
     brainWeight:String,
     part:String,
     staining:String,
     sectionThickness:String,
     planeOfSectioning:String,
-    distance:String
+    distance:String,
+    order:String
 })
 
-module.exports = mongoose.model('zillesHuman',zillesHumanSchema)
+module.exports = mongoose.model('zillesAnimal',zillesAnimalSchema)
