@@ -10,8 +10,13 @@ const collectionsRoutes = require('./routes/collections')
 //Port number
 const PORT = 7000
 
+
+
 //Database
-mongoose.connect("mongodb://localhost:27017", {
+
+const mongoURL = "mongodb://localhost:27017"
+
+mongoose.connect(mongoURL,{
     useNewUrlParser:true,
     useUnifiedTopology:true
 })
@@ -20,6 +25,7 @@ const db = mongoose.connection;
 
 db.once('open',() => {
     console.log("Connected to mongoDB")
+    console.log(db.collections);
 })
 
 //Middleware
